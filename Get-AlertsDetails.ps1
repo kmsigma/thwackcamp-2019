@@ -1,4 +1,4 @@
-﻿<#
+<#
 .Synopsis
    This script will get all alerts that /could/ be triggered for a specific monitored element
 .DESCRIPTION
@@ -58,10 +58,10 @@ Write-Host -Object "Kicking off the stopwatch"
 $Sw.Start()
 
 #region Variable Definition
-$OrionServer   = "10.196.3.11" # IP or FQDN of your Orion Server or Orion Additional Web Site
+$OrionServer   = "ORIONSERVER" # IP or FQDN of your Orion Server or Orion Additional Web Site
 $OrionUsername = "admin"       # Assuming traditional database logins
-$OrionPassword = "@ppStack1"   # Same as above
-$PageSize      = 10            # Maximum number of alerts to retrieve
+$OrionPassword = "Password"    # Password for above as above
+$PageSize      = 10            # Maximum number of alerts to retrieve for each element
 
 # Limiting selection (used for performance testing)
 $UseTop        = $false
